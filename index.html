@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0C0C0C">
+  <meta name="description"
+    content="Hammad — Software Engineer. Crafting robust, scalable software with purpose and precision.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Hammad — Software Engineer">
+  <meta property="og:description" content="Portfolio of Hammad — Software Engineer building high-quality software.">
+  <meta property="og:type" content="website">
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet">
+
+  <title>Hammad — Software Engineer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="hero">
+    <!-- Video Background -->
+    <video class="hero__video" autoplay muted loop playsinline
+      poster="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1' height='1'%3E%3Crect fill='%230C0C0C' width='1' height='1'/%3E%3C/svg%3E"
+      id="hero-video">
+      <source src="assets/intro.mp4" type="video/mp4">
+    </video>
+
+    <!-- Overlays -->
+    <div class="hero__overlay-h" aria-hidden="true"></div>
+    <div class="hero__overlay-v" aria-hidden="true"></div>
+
+    <!-- Content -->
+    <div class="hero__content">
+
+      <!-- Nav -->
+      <nav class="nav" role="navigation" aria-label="Main navigation">
+        <span class="nav__logo">Portfolio</span>
+        <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+        <div class="nav__links" id="nav-links">
+          <a href="#about" class="nav__link">About</a>
+          <a href="#experience" class="nav__link">Experience</a>
+          <a href="#projects" class="nav__link">Projects</a>
+          <a href="#contact" class="nav__link">Contact</a>
+        </div>
+      </nav>
+
+      <!-- Main hero content -->
+      <div class="hero__main">
+        <div>
+          <p class="hero__label anim">Developer · Engineer · Builder</p>
+          <h1 class="hero__title anim" style="transition-delay: 100ms;">HAMMAD</h1>
+          <p class="hero__subtitle anim" style="transition-delay: 200ms;">Software Engineer</p>
+        </div>
+      </div>
+
+      <!-- Bottom bar -->
+      <div class="hero__bottom">
+        <div class="hero__scroll" id="scroll-indicator">
+          <span class="hero__scroll-text">Scroll</span>
+          <div class="hero__scroll-line">
+            <div class="hero__scroll-line-inner" aria-hidden="true"></div>
+          </div>
+        </div>
+
+        <div class="hero__sound">
+          <span class="hero__sound-text" id="sound-label">Tap for sound</span>
+          <button class="hero__sound-btn" id="sound-toggle" aria-label="Toggle sound">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M11 5L6 9H2v6h4l5 4V5z" id="sound-icon-on" />
+              <line x1="23" y1="9" x2="17" y2="15" id="sound-mute-1" />
+              <line x1="17" y1="9" x2="23" y2="15" id="sound-mute-2" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ===== ABOUT ===== -->
+  <section class="about" id="about" aria-label="About me">
+    <div class="about__inner">
+      <h2 class="about__heading hero-heading anim">ABOUT ME</h2>
+
+      <div class="about__content">
+        <p class="about__bio anim">
+          I'm a Software Engineer who values craftsmanship over shortcuts. I build robust, scalable software with
+          purpose and precision — from backend architecture to polished front-end experiences.
+        </p>
+
+        <!-- Skills -->
+        <div class="about__skills anim">
+          <div class="about__skills-group anim-stagger" id="skills-stagger">
+            <div class="about__skill-row">
+              <span class="about__skill-label">Languages</span>
+              <div class="about__skill-tags">
+                <span class="about__skill-tag">JavaScript</span>
+                <span class="about__skill-tag">TypeScript</span>
+                <span class="about__skill-tag">Python</span>
+                <span class="about__skill-tag">HTML</span>
+                <span class="about__skill-tag">CSS</span>
+                <span class="about__skill-tag">SQL</span>
+              </div>
+            </div>
+            <div class="about__skill-row">
+              <span class="about__skill-label">Frameworks & Libraries</span>
+              <div class="about__skill-tags">
+                <span class="about__skill-tag">React</span>
+                <span class="about__skill-tag">Next.js</span>
+                <span class="about__skill-tag">Node.js</span>
+                <span class="about__skill-tag">Express</span>
+                <span class="about__skill-tag">Vue.js</span>
+                <span class="about__skill-tag">Tailwind</span>
+              </div>
+            </div>
+            <div class="about__skill-row">
+              <span class="about__skill-label">Tools & Platforms</span>
+              <div class="about__skill-tags">
+                <span class="about__skill-tag">Git</span>
+                <span class="about__skill-tag">Docker</span>
+                <span class="about__skill-tag">AWS</span>
+                <span class="about__skill-tag">Firebase</span>
+                <span class="about__skill-tag">PostgreSQL</span>
+                <span class="about__skill-tag">MongoDB</span>
+                <span class="about__skill-tag">Vercel</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===== EXPERIENCE ===== -->
+  <section class="experience experience--first" id="experience" aria-label="Work experience">
+    <h2 class="experience__heading anim">EXPERIENCE</h2>
+    <div class="experience__list">
+
+      <div class="experience__item anim">
+        <span class="experience__number">01</span>
+        <div class="experience__item-content">
+          <h3 class="experience__item-role">Software Engineer</h3>
+          <span class="experience__item-company">Tech Company</span>
+          <span class="experience__item-period">2023 — Present</span>
+          <p class="experience__item-desc">
+            Building scalable microservices architecture and leading frontend modernization. Reduced page load times by
+            40% through performance optimization.
+          </p>
+        </div>
+      </div>
+
+      <div class="experience__item anim">
+        <span class="experience__number">02</span>
+        <div class="experience__item-content">
+          <h3 class="experience__item-role">Full Stack Developer</h3>
+          <span class="experience__item-company">Startup Inc.</span>
+          <span class="experience__item-period">2022 — 2023</span>
+          <p class="experience__item-desc">
+            Developed core product features from conception to deployment. Implemented CI/CD pipelines and established
+            coding standards for the team.
+          </p>
+        </div>
+      </div>
+
+      <div class="experience__item anim">
+        <span class="experience__number">03</span>
+        <div class="experience__item-content">
+          <h3 class="experience__item-role">Junior Developer</h3>
+          <span class="experience__item-company">Agency Studio</span>
+          <span class="experience__item-period">2021 — 2022</span>
+          <p class="experience__item-desc">
+            Built responsive web applications for diverse clients. Collaborated with designers to translate mockups into
+            pixel-perfect, accessible interfaces.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="projects" id="projects" aria-label="Projects">
+    <div class="projects__header anim">
+      <h2 class="projects__heading hero-heading">PROJECT</h2>
+    </div>
+
+    <!-- Project 1 -->
+    <div class="projects__sticky" style="margin-bottom: 2rem;">
+      <div class="projects__card anim-scale" data-project>
+        <div class="projects__card-header">
+          <div class="projects__card-info">
+            <span class="projects__card-number">01</span>
+            <div class="projects__card-meta">
+              <span class="projects__card-category">Personal</span>
+              <h3 class="projects__card-title">E-Commerce Platform</h3>
+            </div>
+          </div>
+          <div class="projects__card-link">
+            <a href="#" target="_blank" rel="noopener">
+              Live Project
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 17L17 7" />
+                <path d="M7 7h10v10" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="projects__card-images">
+          <div class="projects__card-img-col">
+            <div class="projects__card-img-wrapper">
+              <img
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect fill='%23141418' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23D7E2EA40' font-family='Kanit' font-size='14'%3EScreenshot 1%3C/text%3E%3C/svg%3E"
+                alt="E-Commerce Screenshot 1" loading="lazy">
+            </div>
+            <div class="projects__card-img-wrapper">
+              <img
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect fill='%23141418' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23D7E2EA40' font-family='Kanit' font-size='14'%3EScreenshot 2%3C/text%3E%3C/svg%3E"
+                alt="E-Commerce Screenshot 2" loading="lazy">
+            </div>
+          </div>
+          <div class="projects__card-img-col">
+            <div class="projects__card-img-wrapper projects__card-img-wrapper--single">
+              <img
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='600' viewBox='0 0 600 600'%3E%3Crect fill='%23141418' width='600' height='600'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23D7E2EA40' font-family='Kanit' font-size='16'%3EMain Screenshot%3C/text%3E%3C/svg%3E"
+                alt="E-Commerce Main" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 2 -->
+    <div class="projects__sticky" style="margin-bottom: 2rem;">
+      <div class="projects__card anim-scale" data-project>
+        <div class="projects__card-header">
+          <div class="projects__card-info">
+            <span class="projects__card-number">02</span>
+            <div class="projects__card-meta">
+              <span class="projects__card-category">Personal</span>
+              <h3 class="projects__card-title">Task Management App</h3>
+            </div>
+          </div>
+          <div class="projects__card-link">
+            <a href="#" target="_blank" rel="noopener">
+              Live Project
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 17L17 7" />
+                <path d="M7 7h10v10" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="projects__card-images">
+          <div class="projects__card-img-col">
+            <div class="projects__card-img-wrapper">
+              <img
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect fill='%23141418' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23D7E2EA40' font-family='Kanit' font-size='14'%3EScreenshot 1%3C/text%3E%3C/svg%3E"
+                alt="Task App Screenshot 1" loading="lazy">
+            </div>
+            <div class="projects__card-img-wrapper">
+              <img
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect fill='%23141418' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23D7E2EA40' font-family='Kanit' font-size='14'%3EScreenshot 2%3C/text%3E%3C/svg%3E"
+                alt="Task App Screenshot 2" loading="lazy">
+            </div>
+          </div>
+          <div class="projects__card-img-col">
+            <div class="projects__card-img-wrapper projects__card-img-wrapper--single">
+              <img
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='600' viewBox='0 0 600 600'%3E%3Crect fill='%23141418' width='600' height='600'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23D7E2EA40' font-family='Kanit' font-size='16'%3EMain Screenshot%3C/text%3E%3C/svg%3E"
+                alt="Task App Main" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Project 3 -->
+    <div class="projects__sticky" style="margin-bottom: 2rem;">
+      <div class="projects__card anim-scale" data-project>
+        <div class="projects__card-header">
+          <div class="projects__card-info">
+            <span class="projects__card-number">03</span>
+            <div class="projects__card-meta">
+              <span class="projects__card-category">Personal</span>
+              <h3 class="projects__card-title">API Analytics Dashboard</h3>
+            </div>
+          </div>
+          <div class="projects__card-link">
+            <a href="#" target="_blank" rel="noopener">
+              Live Project
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <path d="M7 17L17 7" />
+                <path d="M7 7h10v10" />
+              </svg>
+            </a>
+          </div>
+        </div>
+        <div class="projects__card-images">
+          <div class="projects__card-img-col">
+            <div class="projects__card-img-wrapper">
+              <img
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect fill='%23141418' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23D7E2EA40' font-family='Kanit' font-size='14'%3EScreenshot 1%3C/text%3E%3C/svg%3E"
+                alt="Dashboard Screenshot 1" loading="lazy">
+            </div>
+            <div class="projects__card-img-wrapper">
+              <img
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='400' height='300' viewBox='0 0 400 300'%3E%3Crect fill='%23141418' width='400' height='300'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23D7E2EA40' font-family='Kanit' font-size='14'%3EScreenshot 2%3C/text%3E%3C/svg%3E"
+                alt="Dashboard Screenshot 2" loading="lazy">
+            </div>
+          </div>
+          <div class="projects__card-img-col">
+            <div class="projects__card-img-wrapper projects__card-img-wrapper--single">
+              <img
+                src="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='600' height='600' viewBox='0 0 600 600'%3E%3Crect fill='%23141418' width='600' height='600'/%3E%3Ctext x='50%25' y='50%25' dominant-baseline='middle' text-anchor='middle' fill='%23D7E2EA40' font-family='Kanit' font-size='16'%3EMain Screenshot%3C/text%3E%3C/svg%3E"
+                alt="Dashboard Main" loading="lazy">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </section>
+
+
+  <!-- ===== CONTACT ===== -->
+  <section class="contact-section" id="contact" aria-label="Contact">
+    <h2 class="contact__heading hero-heading anim">GET IN TOUCH</h2>
+    <p class="contact__subheading anim">Pick whichever channel suits you</p>
+
+    <div class="contact__grid anim-stagger" id="contact-stagger">
+      <!-- Email -->
+      <a href="mailto:hammadmahmood330@gmail.com" class="contact__card">
+        <div class="contact__card-top">
+          <div class="contact__card-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="4" width="20" height="16" rx="2" />
+              <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7" />
+            </svg>
+          </div>
+          <div class="contact__card-arrow">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 17L17 7" />
+              <path d="M7 7h10v10" />
+            </svg>
+          </div>
+        </div>
+        <div class="contact__card-details">
+          <span class="contact__card-label">Email</span>
+          <span class="contact__card-value">hammadmahmood330@gmail.com</span>
+        </div>
+      </a>
+
+      <!-- GitHub -->
+      <a href="https://github.com/hammad-m19" target="_blank" rel="noopener" class="contact__card">
+        <div class="contact__card-top">
+          <div class="contact__card-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57 0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695-.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99.105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225-.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225 0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3 0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12Z" />
+            </svg>
+          </div>
+          <div class="contact__card-arrow">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 17L17 7" />
+              <path d="M7 7h10v10" />
+            </svg>
+          </div>
+        </div>
+        <div class="contact__card-details">
+          <span class="contact__card-label">GitHub</span>
+          <span class="contact__card-value">github.com/hammad-m19</span>
+        </div>
+      </a>
+
+      <!-- LinkedIn -->
+      <a href="https://www.linkedin.com/in/muhammad-hammad-mahmood-a84664344/?skipRedirect=true" target="_blank"
+        rel="noopener" class="contact__card">
+        <div class="contact__card-top">
+          <div class="contact__card-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286ZM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065Zm1.782 13.019H3.555V9h3.564v11.452ZM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003Z" />
+            </svg>
+          </div>
+          <div class="contact__card-arrow">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 17L17 7" />
+              <path d="M7 7h10v10" />
+            </svg>
+          </div>
+        </div>
+        <div class="contact__card-details">
+          <span class="contact__card-label">LinkedIn</span>
+          <span class="contact__card-value">linkedin.com/in/hammad</span>
+        </div>
+      </a>
+
+      <!-- Twitter / X -->
+      <a href="https://twitter.com/hammad" target="_blank" rel="noopener" class="contact__card">
+        <div class="contact__card-top">
+          <div class="contact__card-icon">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+              <path
+                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+            </svg>
+          </div>
+          <div class="contact__card-arrow">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"
+              stroke-linecap="round" stroke-linejoin="round">
+              <path d="M7 17L17 7" />
+              <path d="M7 7h10v10" />
+            </svg>
+          </div>
+        </div>
+        <div class="contact__card-details">
+          <span class="contact__card-label">Twitter</span>
+          <span class="contact__card-value">twitter.com/hammad</span>
+        </div>
+      </a>
+    </div>
+
+    <!-- Footer inside contact section -->
+    <footer class="footer">
+      <span class="footer__text">© <span id="footer-year"></span> Hammad</span>
+      <span class="footer__text">Designed & built with care</span>
+    </footer>
+  </section>
+
+
+  <script src="main.js"></script>
+</body>
+
+</html>
