@@ -21,6 +21,7 @@
 
   <title>Hammad — Software Engineer</title>
   <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="admin.css">
 </head>
 
 <body>
@@ -44,7 +45,7 @@
 
       <!-- Nav -->
       <nav class="nav" role="navigation" aria-label="Main navigation">
-        <span class="nav__logo">Portfolio</span>
+        <span class="nav__logo" id="admin-trigger">Portfolio</span>
         <button class="nav__toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
@@ -201,8 +202,8 @@
     </div>
 
     <!-- Project 1 -->
-    <div class="projects__sticky" style="margin-bottom: 2rem;">
-      <div class="projects__card anim-scale" data-project>
+    <div class="projects__sticky">
+      <div class="projects__card" data-project>
         <div class="projects__card-header">
           <div class="projects__card-info">
             <span class="projects__card-number">01</span>
@@ -247,8 +248,8 @@
     </div>
 
     <!-- Project 2 -->
-    <div class="projects__sticky" style="margin-bottom: 2rem;">
-      <div class="projects__card anim-scale" data-project>
+    <div class="projects__sticky">
+      <div class="projects__card" data-project>
         <div class="projects__card-header">
           <div class="projects__card-info">
             <span class="projects__card-number">02</span>
@@ -293,8 +294,8 @@
     </div>
 
     <!-- Project 3 -->
-    <div class="projects__sticky" style="margin-bottom: 2rem;">
-      <div class="projects__card anim-scale" data-project>
+    <div class="projects__sticky">
+      <div class="projects__card" data-project>
         <div class="projects__card-header">
           <div class="projects__card-info">
             <span class="projects__card-number">03</span>
@@ -450,6 +451,8 @@
   </section>
 
 
+  <script src="admin-data.js"></script>
+  <script src="admin.js"></script>
   <script src="main.js"></script>
 </body>
 
