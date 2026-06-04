@@ -1,11 +1,5 @@
-/* ============================================================
-   PORTFOLIO — Inspired by harsh-portfolio-coral
-   Kanit font, #0C0C0C bg, #D7E2EA text, bold uppercase design
-   ============================================================ */
-
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700;800;900&display=swap');
 
-/* --- Custom Properties --- */
 :root {
   --bg: #0C0C0C;
   --bg-alt: #141418;
@@ -29,7 +23,6 @@
   color-scheme: dark;
 }
 
-/* --- Reset --- */
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -68,12 +61,10 @@ ul, ol { list-style: none; }
   color: var(--white);
 }
 
-/* Scrollbar */
 ::-webkit-scrollbar { width: 10px; background: var(--bg); }
 ::-webkit-scrollbar-thumb { background: #1f1f24; border-radius: 6px; }
 ::-webkit-scrollbar-thumb:hover { background: #2a2a30; }
 
-/* Hero heading gradient text */
 .hero-heading {
   background: linear-gradient(180deg, #646973, #bbccd7);
   -webkit-background-clip: text;
@@ -82,10 +73,6 @@ ul, ol { list-style: none; }
   color: transparent;
 }
 
-
-/* ============================================================
-   HERO SECTION
-   ============================================================ */
 .hero {
   position: relative;
   height: 100vh;
@@ -122,7 +109,6 @@ ul, ol { list-style: none; }
   height: 100%;
 }
 
-/* Navbar */
 .nav {
   display: flex;
   align-items: center;
@@ -149,7 +135,6 @@ ul, ol { list-style: none; }
   color: #fff;
 }
 
-/* Logo */
 .nav__logo {
   font-size: 0.75rem;
   font-weight: 500;
@@ -180,7 +165,6 @@ ul, ol { list-style: none; }
   width: 100%;
 }
 
-/* Hero main content */
 .hero__main {
   flex: 1;
   display: flex;
@@ -217,7 +201,6 @@ ul, ol { list-style: none; }
   color: rgba(255,255,255,0.75);
 }
 
-/* Hero bottom bar */
 .hero__bottom {
   display: flex;
   align-items: flex-end;
@@ -225,7 +208,6 @@ ul, ol { list-style: none; }
   padding: 0 2.5rem 2.5rem;
 }
 
-/* Scroll indicator */
 .hero__scroll {
   display: flex;
   flex-direction: column;
@@ -269,7 +251,6 @@ ul, ol { list-style: none; }
   100% { transform: translateY(200%); }
 }
 
-/* Sound toggle */
 .hero__sound {
   display: flex;
   align-items: center;
@@ -306,10 +287,6 @@ ul, ol { list-style: none; }
   transform: scale(1.1);
 }
 
-
-/* ============================================================
-   ABOUT SECTION
-   ============================================================ */
 .about {
   position: relative;
   display: flex;
@@ -321,7 +298,6 @@ ul, ol { list-style: none; }
   padding: 5rem 1.25rem;
 }
 
-/* Decorative corner images */
 .about__decor {
   position: absolute;
   pointer-events: none;
@@ -365,7 +341,6 @@ ul, ol { list-style: none; }
   font-size: 1rem;
 }
 
-/* Skills list */
 .about__skills {
   width: 100%;
   max-width: 48rem;
@@ -413,10 +388,6 @@ ul, ol { list-style: none; }
   color: var(--text);
 }
 
-
-/* ============================================================
-   SERVICES SECTION — White BG
-   ============================================================ */
 .services {
   position: relative;
   width: 100%;
@@ -502,10 +473,6 @@ ul, ol { list-style: none; }
   font-size: 0.95rem;
 }
 
-
-/* ============================================================
-   EXPERIENCE SECTION — White BG continued
-   ============================================================ */
 .experience {
   position: relative;
   width: 100%;
@@ -593,10 +560,6 @@ ul, ol { list-style: none; }
   margin-top: 0.5rem;
 }
 
-
-/* ============================================================
-   PROJECTS SECTION — Sticky cards
-   ============================================================ */
 .projects {
   position: relative;
   width: 100%;
@@ -631,7 +594,6 @@ ul, ol { list-style: none; }
   z-index: 1;
 }
 
-/* Progressive width — each card wider than the previous */
 .projects__sticky:nth-child(2) {
   padding: 0 3rem;
   z-index: 1;
@@ -735,7 +697,6 @@ ul, ol { list-style: none; }
   color: var(--text);
 }
 
-/* Project images grid */
 .projects__card-images {
   display: grid;
   grid-template-columns: 40% 60%;
@@ -768,10 +729,6 @@ ul, ol { list-style: none; }
   min-height: 0;
 }
 
-
-/* ============================================================
-   CONTACT SECTION
-   ============================================================ */
 .contact-section {
   position: relative;
   z-index: 10;
@@ -883,10 +840,6 @@ ul, ol { list-style: none; }
   word-break: break-all;
 }
 
-
-/* ============================================================
-   FOOTER
-   ============================================================ */
 .footer {
   max-width: 64rem;
   margin: 5rem auto 0;
@@ -907,12 +860,6 @@ ul, ol { list-style: none; }
   font-size: 0.7rem;
 }
 
-
-/* ============================================================
-   ANIMATIONS (Framer-Motion style via CSS)
-   ============================================================ */
-
-/* Fade in up */
 .anim {
   opacity: 0;
   transform: translateY(40px);
@@ -925,7 +872,6 @@ ul, ol { list-style: none; }
   transform: translateY(0);
 }
 
-/* Fade in scale */
 .anim-scale {
   opacity: 0;
   transform: scale(0.92);
@@ -938,7 +884,6 @@ ul, ol { list-style: none; }
   transform: scale(1);
 }
 
-/* Stagger children */
 .anim-stagger > * {
   opacity: 0;
   transform: translateY(20px);
@@ -961,10 +906,6 @@ ul, ol { list-style: none; }
 .anim-stagger--visible > *:nth-child(8) { transition-delay: 560ms; }
 .anim-stagger--visible > *:nth-child(n+9) { transition-delay: 640ms; }
 
-
-/* ============================================================
-   RESPONSIVE
-   ============================================================ */
 @media (min-width: 640px) {
   .about__decor--tl { left: 2%; width: 160px; }
   .about__decor--bl { left: 6%; width: 140px; }
@@ -1104,7 +1045,6 @@ ul, ol { list-style: none; }
   }
 }
 
-/* Mobile nav */
 .nav__toggle {
   display: none;
   flex-direction: column;
@@ -1177,10 +1117,6 @@ ul, ol { list-style: none; }
   }
 }
 
-
-/* ============================================================
-   REDUCED MOTION
-   ============================================================ */
 @media (prefers-reduced-motion: reduce) {
   *, *::before, *::after {
     animation-duration: 0.01ms !important;
