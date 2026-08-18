@@ -1,5 +1,5 @@
 import React from 'react';
-import { Mail, Github, Linkedin, Twitter, ArrowUpRight } from 'lucide-react';
+import { Mail, Github, Linkedin, ArrowUpRight, MessageCircle } from 'lucide-react';
 import FadeIn from '../components/FadeIn';
 
 const contacts = [
@@ -18,14 +18,14 @@ const contacts = [
   {
     icon: Linkedin,
     label: 'Linkedin',
-    value: 'linkedin.com/in/hammad',
-    href: 'https://linkedin.com/in/hammad',
+    value: 'linkedin.com/in/muhammad-hammad-mahmood',
+    href: 'https://www.linkedin.com/in/muhammad-hammad-mahmood-a84664344/',
   },
   {
-    icon: Twitter,
-    label: 'Twitter',
-    value: 'twitter.com/hammad',
-    href: 'https://twitter.com/hammad',
+    icon: MessageCircle,
+    label: 'WhatsApp',
+    value: '03096699111',
+    href: 'https://wa.me/923096699111',
   },
 ];
 
